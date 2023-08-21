@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Candy Store</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <h1>Candy Store</h1>
+    <form id="candyForm">
+        <input type="text" id="name" placeholder="Candy Name" required>
+        <input type="text" id="description" placeholder="Candy Description" required>
+        <input type="number" id="price" placeholder="Candy Price" required>
+        <input type="number" id="quantity" placeholder="Total Quantity" required>
+        <button type="submit">Add Details</button>
+    </form>
+
+    <table id="candyTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="candyTableBody"></tbody>
+    </table>
+
+    <script src="demo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
+ 
